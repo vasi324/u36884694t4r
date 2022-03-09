@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<head><title>our website</title></head>
+
+    <header><img height="100" style="border: 3px solid green;" src="https://www.shuddhi.com/wp-content/uploads/2019/09/ayur.jpg"></header><h1><u>ayurvedic health</u></h1>
+
+<br>
+<br> 
+<br> 
+<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor:-webkit-grab;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #2980B9;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    @media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(14, 49, 248);
+  }
+}
+@media screen and (min-width: 200px) {
+  body {
+    background-color: rgb(8, 240, 228);
+  }
+}
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color:black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
+    </style>
+    </head>
+ <body>
+    <div id="d1" class="dropdown">
+        <section>
+      <button id="button1" onclick="myFunction()" class="dropbtn">click me!</button>
+    </section>
+      <div id="myDropdown" class="dropdown-content">
+        <a onclick="a1()" href="#">Injurys</a>
+        <a onclick="a2()" href="#">Cold</a>
+        <a onclick="a3()" href="#">Fever</a>
+        <a onclick="a4()" href="#">Headache</a>
+        <a onclick="a5()" href="#">Gas</a>
+      </div>
+    </div>
+    <section id="section1" style="font-size: large;text-decoration-color: rgb(17, 184, 128);">
+
+    </section>
+</body> 
+    <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      function a1(){
+      document.getElementById("section1").innerHTML="take a bandit and applye it where you got injured and wait for a week and your done!."
+    }
+    function a2(){
+      document.getElementById("section1").innerHTML="it may take several weeks but aplye a napkin dip it in hot water and put it on your head and your done!."
+    }
+    function a3(){
+      document.getElementById("section1").innerHTML="don't drink cold water drink hot water and bath with hot water nad do not go out when it is cold."
+    }
+    function a4(){
+      document.getElementById("section1").innerHTML="If you have one headache, put on zandu blam It'll help you relieve the headache. If it doesn't Drink amuruthanjam and don't forget to put water in the cup ."
+    }
+    function a5(){
+      document.getElementById("section1").innerHTML="exsursise and make a healthy diet and you will be fine."
+    }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }</script>
+<br>
+<br>
+<br>
+<footer>
+    <h1>made by</h1>
+    <h2 href="#">vasist.p</h2>
+    <h2>All things are prescript by doctors. Professional doctors. And this app is. Made from feedback from professional doctors. So don't worry about anything about the health issues or anything. This all app is prescript by professional doctors. </h2>
+</footer>
